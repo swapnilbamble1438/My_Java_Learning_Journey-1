@@ -1,0 +1,406 @@
+Q) what is java?
+java is a multipurpose language that are use across the application use
+uber,spotify,linkedin etc.
+
+Q) features of java:
+1) multithreading in java
+2) almost Ojbect oriented language
+	because they use primitive data type thus making it not a purely 
+	objected oriented language
+3) It is portable, secured, dynamic, concurrent, multithread
+4) It is platform independent
+
+Q)Platform:
+The Hardware and software environment on which a program or application
+runs is refered as a platform.
+
+Q) Platform independent:
+The ability of a programming language to run on different operation systems
+without having significant adjustments is referred as platform independence.
+Platform independent is achieved when code created in a certain language
+may be executed on numerous operating systems after being copied
+and ran without errors.
+For example, if you develope code on Windows and it can be executed on
+another operation system, such as linux , without problems, it is deemed
+platform-independent. This code is also compatible with other operating
+systems such as macOS, Unix and Solaris.
+
+Q) why java is platform independent language?
+java is compiled in two steps:
+1) firt of all you compile java
+	it converts into the .class file
+	than .class file goes inside the jvm
+	after which it compiles and run the code
+	thus making it platform independent
+	because jvm it is built by the customer specification
+	for windows it would be different jvm for apple it 
+	would be different jvm thus making it a platform
+	independent language
+
+
+
+Q) Why is Java a platform independent language?
+Java language was developed in such a way that it does not depend 
+on any hardware or software due to the fact that the compiler compiles 
+the code and then converts it to platform-independent byte code 
+which can be run on multiple systems.
+
+The only condition to run that byte code is for the machine 
+to have a runtime environment (JRE) installed in it
+
+Q) How does program execute in java
+* When we write a program we save the program with .java extension
+*Basically, javac is the compiler that compiles the java code.
+ javac compiler compiles the java code into Bytecode. which is also a .class file
+* Now JVM which is an interpreter that executes the byte code into
+  machine code
+* and thus the user gets desired output 
+
+     _______________               ______________
+    | Java program  | Compiler    |              |  
+    |  written on   |------------>| .class files |           _________
+    |  Windows OS   |             |  (bytecode)  |__________| JVM of  | 
+    |_______________|             |______________|          | Windows |____________
+                                       |      |             |_________|            |    
+                                       |      |                                 ___|______ 
+                                       |      |              _________         | Same     |
+                                       |      |_____________| JVM of  |        | Executed |
+                                       |                    | Linux   |________| Ouput    |
+                                       |                    |_________|        | for all  |
+                                       |                                       |__________|
+                                       |                     _________              |  
+                                       |____________________| JVM of  |             |
+                                                            |   MAC   |_____________|
+                                                            |_________|
+
+Q) JVM:
+Java Virtual Machine.
+Jvm executes the java programs.
+It converts Java bytecode into machines language.
+JVM operation: Loads code, verifies code, Executes code,
+               Provide runtime environment
+
+Q) How Java provides platform independenc?
+Java platform independence comes from its virtual machine.
+Java code is compiled into bytecodes.
+JVM compiles the bytecodes into machine code for the operating system.
+
+Q) what is jdk
+1) java development kit
+2) To run a java program, we must need a JDK
+3) To create any kind of powerful java application, 
+   JDK is just sufficient and enough powerful kit
+   contains all the required software.
+  * JRE (Java Runtime Environment)
+  * Javac compiler
+  * JVM (Java Virtual Machine)
+  * Document generator
+  * Other necessary library and tools
+
+
+Q) what is JRE?
+ contains all the extra classes or inbuilt classes
+	it also checks or validate your bytecode.
+mean if you want some extra code or want to use any inbuilt 
+	class or function so that need will be fulfilled by JRE
+	
+
+Q) what is jvm?
+1) Your code will run on JVM
+2)jvm is a java virtual machine
+	there are many things inside jvm
+	like there is classloader inside
+	jvm which loads the class based on the requirement of
+	the program
+	there is a bytecode checker and stuff like that aswell inside of jvm
+
+ _________________________________________________
+|                                             JDK |
+|    _________________________________________	  |
+|   |                        _   _   _   JRE  |   |
+|   |inbuilt classes & func-|_| |_| |_|       |   |
+|   |    ___________________/_____________    |   |
+|   |   |                 _/         JVM  |   |   |
+|   |   |                |_|              |   |   |
+|   |   |                                 |   |   |
+|   |   |_________________________________|   |   |
+|   |                                         |   |
+|   |_________________________________________|   |
+|                                                 |
+|_________________________________________________|
+
+==============================================================================
+Q) Stack and Heap Memory:
+
+3. Difference between Heap and Stack Memory in java. And how java utilizes this.
+Stack memory is the portion of memory that was assigned to every individual program.
+ And it was fixed. On the other hand, Heap memory is the portion that was not 
+allocated to the java program but it will be available for use by the java 
+program when it is required, mostly during the runtime of the program.
+
+Java Utilizes this memory as - 
+
+When we write a java program then all the variables, methods, etc are stored 
+in the stack memory.
+And when we create any object in the java program then that object was 
+created in the heap memory. And it was referenced from the stack memory.
+
+
+Example- Consider the below java program:
+
+class Main {
+   public void printArray(int[] array){
+       for(int i : array)
+           System.out.println(i);
+   }
+   public static void main(String args[]) {
+       int[] array = new int[10];
+       printArray(array);
+   }
+}
+
+For this java program. The stack and heap memory occupied by java is -
+
+
+Main and PrintArray is the method that will be available in the stack area 
+and as well as the variables declared that will also be in the stack area. 
+
+And the Object (Integer Array of size 10) we have created, 
+will be available in the Heap area because that space will
+ be allocated to the program during runtime. 
+
+
+
+
+Q) Can java be said to be the complete object-oriented programming language?
+Yes  Because everything in java is under the classes.
+And we can access that by creating the objects
+
+But also if we say that java is not a completely object-oriented programming language 
+because it has the support of primitive data types like int, 
+float, char, boolean, double, etc.
+
+
+
+
+Q) what do you understand by an instance variable and a local variable?
+Instance variables are those variables that are accessible by all the methods in the class. They are declared outside the methods and inside the class. 
+These variables describe the properties of an object and remain 
+bound to it at any cost.
+
+All the objects of the class will have their copy of the variables 
+for utilization. If any modification is done on these variables, 
+then only that instance will be impacted by it, and all other 
+class instances continue to remain unaffected.
+
+Example:
+
+class Athlete {
+public String athleteName;
+public double athleteSpeed;
+public int athleteAge;
+}
+Local variables are those variables present within a block, 
+function, or constructor and can be accessed only inside them. 
+The utilization of the variable is restricted to the block scope. 
+Whenever a local variable is declared inside a method, the 
+other class methods don’t have any knowledge about the local variable.
+
+Example:
+
+public void athlete() {
+String athleteName;
+double athleteSpeed;
+int athleteAge;
+}
+
+
+Example of Instance and Local Variables:
+
+class Athlete
+{                                      _
+	public String athleteName;      |
+	public double athleteSpeed;     |-----> Instance Variables
+	public int athleteAge;         _|
+	
+	public Athlete(String name,double speed,int age)---> Local Variables
+	{
+		this.athleteName = name;
+		this.athleteSpeed = speed;
+		this.athlelteAge = age;
+	}
+	
+	public void athleteRun()
+	{
+		int speed = 100;-------------> Local Variables
+		System.out.println("Athlete runs at " + speed + "Km/hr");
+	}
+}
+
+
+Q)What are the default values assigned to variables and instances in java?
+There are no default values assigned to the variables in java. We need to 
+initialize the value before using it. Otherwise, it will throw a compilation
+ error of (Variable might not be initialized). 
+But for instance, if we create the object, then the default value will be 
+initialized by the default constructor depending on the data type. 
+If it is a reference, then it will be assigned to null. 
+If it is numeric, then it will assign to 0.
+If it is a boolean, then it will be assigned to false. Etc.
+
+Q) JIT compiler.
+JIT stands for Just-In-Time and it is used for improving the performance during run time.
+
+==============================================================================
+
+Q) Main method:
+it is an entry point of program
+so each and every program that you compile should have a main method.
+through which the prgram knows that the execution should be start from specific point
+
+Q) syntax for main method:
+access specifier - public static
+return type - void
+Name of function- main
+and in curly bracket there is String[] array and arguments
+
+Q) why is the main method static in java?
+because we can reference it using the class like when we run the java
+we say java and the name of class using that name of class you can
+directly execute without anykind of object
+
+Q) if we dont use static in main method than will our program run or not?
+It will compile successfully but you will get error in runtime
+like the error will say that the given function or main method is not present
+
+Q) Exceptions:
+there can be two kind of exceptions
+i) there can be compile time exception:
+	while writing the code you have to check some of the things
+	and the error you face while compile the program that error would be
+	compile time exception
+	e.g: a) while connecting jdbc session while compiling the jdbc
+		  you may get the sql exception like some insert or update query 
+			is wrong or like class.for name is not written
+	
+ii) aswell as runtime exception:
+	while executing a code you get exception that would be a runtime exception
+	e.g: a)if I iterating a loop
+			and dividing each elem by certain number
+			and by mistake elem is divided by zero
+			you may get arithmetic exception
+
+Q) Exception handling:
+ you can do Exception handling in two ways
+ like try catch block and using throw keyword
+ try catch block: it conist of three basic things
+			from which one is optional
+			and there is try and catch
+			and in catch block you need to
+			give the exception that can be occur
+			there is a finally block that executes
+			regardless the flow goes inside of the
+			catch block or not
+throws keyword very similar to try catch block
+but there is syntax differce in them
+
+
+Q) try with multiple catch is valid or not
+	yes it is valid you can have multiple catch block
+	inside of a try
+	you can have nexted try block inside of try block
+	you can have multple tryblock
+	when I say try it means try and catch block both
+	like you are checking for sql exception or 
+	exception itself
+
+Q) Difference between throw and throws keyword:
+	first of all there is syntactical diferent in class
+	one is written after the class and second one is written
+	while you are checking some kind of error
+	e.g basically throws keyword is used go to the
+	exception block essentially
+	e.g in program you are checking if the age is greater
+	than 18 or not you have made a custom exception block for the same
+	and incase the age is less than 18 you are writing a throw keyword
+	so in that way you can use throw keyword	
+	e.g: throws keyword usually followed by the name exception like sql or
+	arithmetic or io exception
+
+Q) finally block and final keyword:
+ finally are used in exeption handling 
+while final is used in variable,method or a class
+
+Q) what will be the default value for variable and instance?
+ for int i; it will be 0
+     float i; 0.0
+	double i; 0.0d
+	String i;  null
+
+Q) Collection Framework
+ Collection Framworks helps to store your data in certain way.
+Each and Every collection is different in its own way.
+one of the interface is list interface from which you can make
+list,array,Stack,queues,linkedlist,hashmap,arraylist,hashset aswell
+
+Q) Difference between Array and Arraylist
+so arrays are basically a predefined set of values.
+like if when I sayy Array of length 5 it will be just the array of 
+length 5.
+But When I say Arraylist I can dynamically grow the
+length size.
+
+Arrays are  more memory efficient if I say array of length five
+I know that this much memory space will occupied not more than that
+and if I had to add one more element to it than I have to make 
+new array and copy the elements of old array and adding new elements.
+But in Arraylist there is a function called add by which
+you can add new Elems and increase the size as well
+
+Q) In case of array how can you add the element
+If I want to assign the element I will do it by using indexing.
+I will write array name followed by square bracket and inside bracket
+than =  and assign some value
+
+Q) Package in java
+packages are basically logically grouping or logical folders of java.
+which are seen inside of a project will be the folder kind of things.
+like com.demo.entities so there wiil be a com folder inwhich there
+will be a demo folder inwhich there will be an entities folder
+inwhich I will keep all my entities class
+
+Q) Why package are used
+if you have packages it will help you
+while developing any thing, packages helps to manage the classes
+and we know exactly where do we need to find the classes. like if I want to find the entity classes I will search the entity package
+be able to find the class. And I dont need to search the entire project
+inorder to find the certain class
+
+Q) so have you used any inbuilt package
+ Yes I used scanner package
+
+Q) what are the main pillars in OOPS concepts
+Main pillars of OOPs concept would be Abstraction, Polymorphism,
+Encapsulation, Inheritance
+
+Q) Data Abstraction
+so basically in program you dont really want to know what exactly a function is doing you can do the same with the help of abstraction
+while you give the user just a function that they need to execute itself
+and they dont need to worry about how it is implemented
+or which are the different classes are used inside specific function
+with the help of this you can achieve abstraction
+thus making it much more easier to understand the project and
+making the consistency itself
+
+Q) Encapsulation is used for data hiding. 
+ it is used using access modifiers like
+ Public, protected, private , default  are access specifier.
+Using this we can define the scope of the variable or the functions.
+like if it it public it can be used all through 
+and if it is protected than only subclasses can be used it 
+and if private than only the current class can use it.
+
+Q) storage classes
+
+
+
