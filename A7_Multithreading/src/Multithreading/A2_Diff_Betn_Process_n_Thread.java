@@ -39,10 +39,10 @@
  
  Difference between Process and Thread:
  	
- 		Process	         |			Thread
+ 		Process	                 |			Thread
 ---------------------------------|---------------------------------- 		
  1. It is a program which is in  | 1. It is the sub part
-    executing state 		 |    of process (small task)
+    executing state 		     |    of process (small task)
       OR                         |       OR
     It is a program which is     |    It is the small level
     executing                    |    of task/process

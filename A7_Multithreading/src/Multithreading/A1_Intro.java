@@ -17,7 +17,7 @@ multitasking.
  	      _____   ______    _________
   	     | VLC | | Word |  | Browser |
   	     |_____| |______|  |_________|
-                __|______|_______|_
+            __|______|_______|_
   	       |        OS         |
   	       |___________________|
   	             ___|___
@@ -43,7 +43,7 @@ multitasking.
   MultiProcessing.
   
   
-              _____   ______    _________
+          _____   ______    _________
   	     | VLC | | Word |  | Browser | 
   	     |_____| |______|  |_________|
   	        __|______|_______|_
@@ -59,10 +59,10 @@ multitasking.
 
  Multi Threading:
  
-              _____   ______    _________
+          _____   ______    _________
   	     | VLC | | Word |  | Browser |
   	     |_____| |______|  |_________|
-                __|______|_______|_
+            __|______|_______|_
   	       |        OS         |
   	       |___________________|
   	             ___|___
@@ -114,14 +114,14 @@ multitasking.
  e.g:
  
  
-             ______________________________       
+         ______________________________       
   	    |  PB  | Timer | Video | Audio |<---- Threads
   	    |___|__|___|___|___|___|___|___|
   	    |   |______|_______|_______|   |   
   	    |              |               |
   	    |             VLC <------------|----- Process 
   	    |______________________________|
-                 __|______|_______|_
+             __|______|_______|_
   	        |        OS         |
   	        |___________________|
   	               ___|___
@@ -325,8 +325,8 @@ public class A1_Intro {
 }
 
 class Progressbar extends Thread
-{
-	void startProgressbar()
+{ 
+	public void run()
 	{
 	  System.out.println("Running Progressbar");
 	}
@@ -334,7 +334,7 @@ class Progressbar extends Thread
 
 class Timer extends Thread
 {
-	void startTimer() 
+	public void run()
 	{
 		System.out.println("Running Timer");
 	}
@@ -342,7 +342,7 @@ class Timer extends Thread
 
 class Video extends Thread
 {
-	void startVideo()
+	public void run()
 	{
 		System.out.println("Playing Video");
 	}
@@ -350,7 +350,7 @@ class Video extends Thread
 
 class Audio extends Thread
 {
-	void startAudio()
+	public void run()
 	{
 		System.out.println("Playing Audio");
 	}

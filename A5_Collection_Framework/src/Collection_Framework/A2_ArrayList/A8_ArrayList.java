@@ -26,7 +26,7 @@ ArrayList:
    		     or increase the size of array
    		     once it is declare. It is not
    		     growable or resizeable. 
-   	        _ _ _ _
+   	            _ _ _ _
    arraylist-> |_|_|_|_| we can add extra element
    		0 1 2 3  whenever we want.
    		         And its size can be 

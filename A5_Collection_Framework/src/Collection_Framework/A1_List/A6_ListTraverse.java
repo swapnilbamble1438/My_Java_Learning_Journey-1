@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class Aa26_ListTraverse {
+public class A6_ListTraverse {
 
 	public static void main(String[] args) {
 		

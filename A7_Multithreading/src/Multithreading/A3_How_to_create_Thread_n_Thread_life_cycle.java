@@ -279,8 +279,8 @@ class Test extends Thread
             		   ^	                          |
             		  _|______________________________v_                               		
             		 |        Non-runnable state        |		
-                         |   sleep(); waiting(); suspend()  |
-                         |__________________________________|
+                     |   sleep(); waiting(); suspend()  |
+                     |__________________________________|
             
     
        so there are toal Five stages in thread life cycle
@@ -306,7 +306,7 @@ class Test extends Thread
    	
      Stage 1: Person is born                 Stage 2: Person is               Stage 3: Person is                     Stage 4: Dead State
      Person p = new Person();	             in Runnable state                 in Runnable state
-                ___________	              _____________                     ______________                         ________________
+                ___________	                  _____________                     ______________                         ________________
                |   O><	   |   p.start()     |      _      | When person is    |      _       | When person complete  |      O-<-<     |
                | Born Baby |                 |    \(_)/    | selected for job  |     (_)      | its life tasks        |   Dead Person  |
                |___________|---------------->|    __|__    |------------------>|    _|_|_     |---------------------->|________________|

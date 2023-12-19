@@ -1,4 +1,4 @@
-package Arrays_Programs;
+package com;
 
 import java.util.*;
 
@@ -54,9 +54,8 @@ class Employee{
 }
 
 
-public class Z_Practice {
+public class A5_Classify_objects_in_ArrayList {
 	
-	@SuppressWarnings("unlikely-arg-type")
 	public static void main(String[] args) 
 	{
 
